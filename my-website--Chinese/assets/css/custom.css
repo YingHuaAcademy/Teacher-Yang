@@ -1247,6 +1247,21 @@ body.site-body::before {
     grid-template-columns: 1fr;
   }
 
+  .resource-layout {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+
+  .resource-download {
+    grid-template-columns: auto minmax(0, 1fr);
+    padding: 1.1rem;
+  }
+
+  .resource-action {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
   .footer-grid,
   .form-actions {
     align-items: flex-start;
