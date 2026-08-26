@@ -578,6 +578,104 @@ body.site-body::before {
   padding: 1.6rem;
 }
 
+.resource-section {
+  padding: clamp(3.8rem, 7vw, 6.5rem) 0;
+  border-block: 1px solid var(--border);
+  background: rgba(239, 234, 227, 0.66);
+}
+
+.resource-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(360px, 1.18fr);
+  align-items: center;
+  gap: clamp(2rem, 6vw, 5.5rem);
+}
+
+.resource-copy h2 {
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(2rem, 4.6vw, 3.45rem);
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+}
+
+.resource-copy > p:last-child {
+  max-width: 32rem;
+  margin: 1rem 0 0;
+  color: var(--muted);
+}
+
+.resource-download {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1.1rem;
+  min-height: 8.25rem;
+  padding: 1.35rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 12px 32px rgba(42, 34, 29, 0.06);
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.resource-download:hover {
+  transform: translateY(-3px);
+  border-color: rgba(215, 38, 46, 0.42);
+  box-shadow: 0 20px 42px rgba(42, 34, 29, 0.10);
+}
+
+.resource-file-icon {
+  display: grid;
+  width: 3.4rem;
+  height: 3.4rem;
+  place-items: center;
+  border-radius: 8px;
+  background: var(--surface-soft);
+  color: var(--button-red);
+  font-size: 1.35rem;
+}
+
+.resource-file-copy {
+  min-width: 0;
+}
+
+.resource-file-copy strong,
+.resource-file-copy small {
+  display: block;
+}
+
+.resource-file-copy strong {
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.resource-file-copy small {
+  margin-top: 0.35rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.resource-action {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 8px;
+  background: var(--button-red);
+  color: #fff;
+  font-size: 0.86rem;
+  font-weight: 750;
+  white-space: nowrap;
+}
+
+.resource-download:hover .resource-action {
+  background: var(--button-red-dark);
+}
+
 .course-meta {
   display: flex;
   flex-wrap: wrap;
